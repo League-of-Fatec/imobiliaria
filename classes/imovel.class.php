@@ -5,9 +5,9 @@
 		public $quartos;
 		public $valor;
 		public $endereco;
+		public $descricao;
 
-		public function __construct($quartos,$valor,$endereco) {
-			
+		public function __construct($quartos, $valor, $endereco, $descricao) {
 			
 			if (is_numeric($quartos)) {
 				$this -> quartos = $quartos;
@@ -40,7 +40,7 @@
 	}
 
 
-	$imovel1 = new Imovel(3,32125,"Rua 1");
+	$imovel1 = new Imovel(3,32125,"Rua 1", "Teste");
 
 	$imovel1 -> dadosImovel();
 
