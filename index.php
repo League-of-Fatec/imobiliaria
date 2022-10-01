@@ -11,8 +11,8 @@
 	<nav>
 		<h1>Imobiliária</h1>
 		<button id="cadastrar">Cadastrar <img src="./img/mais.svg" alt="Ícone de Mais"></button>
-		<section class="menu">
-			<img src="./img/x.svg" alt="Ícone em formato de X">
+		<section class="menu" id="menu">
+			<img src="./img/x.svg" alt="Ícone em formato de X" id="fechar">
 			<h2 id="menu_titulo">Cadastrar Imóveis</h2>
 			<form action="form.php" method="POST">
 				<label for="Tipo">Tipo de Imóvel</label> <br>
@@ -23,8 +23,8 @@
 				<label for="Preço">Preço</label> <br>
 				<input type="number" name="Preço" id="preco"> <br>
 				<label for="Quintal">Quintal?</label> <br>
-				<input type="radio" name="Quintal" id="quintal"> Sim
-				<input type="radio" name="Quintal" id="quintal"> Não <br>
+				<input type="radio" name="Quintal" id="quintal" value="s"> Sim
+				<input type="radio" name="Quintal" id="quintal" value="" Não <br>
 				<label for="Descrição">Descrição</label> <br>
 				<textarea name="Descrição" id="decricao" cols="30" rows="10" maxlength="100"></textarea> <br>
 				<button type="submit" id="submit">Cadastrar</button>
@@ -34,5 +34,7 @@
 	<main class="lista">
 
 	</main>
+
+	<script src="./scripts/menu.js"></script>
 </body>
 </html>

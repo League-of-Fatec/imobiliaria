@@ -49,6 +49,15 @@ h1 {
     right: 0;
     background-color: #FFF;
     padding: 3rem 2rem;
+    visibility: hidden;
+}
+
+.open {
+    visibility: visible;
+}
+
+#fechar {
+    cursor: pointer;
 }
 
 #menu_titulo {
