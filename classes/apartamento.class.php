@@ -6,9 +6,9 @@
 
 		public $condominio;
 
-		public function __construct($quartos,$valor,$endereco,$condominio){
+		public function __construct($quartos,$valor,$endereco,$condominio, $descricao){
 
-			parent::__construct($quartos,$valor,$endereco);
+			parent::__construct($quartos,$valor,$endereco, $descricao);
 
 			if (is_numeric($condominio)) {
 				$this -> condominio = $condominio;
@@ -24,7 +24,4 @@
 
 	}
 
-	$apart1 = new Apartamento(5,1042323,"Rua 3",5000);
-
-	$apart1 -> dadosApartamento();
 ?>

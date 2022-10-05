@@ -30,6 +30,12 @@
 				echo "Esperava-se um valor do tipo 'texto'!<br>";
 			}*/
 
+			if (is_string($descricao) && $descricao != ''){
+				$this -> descricao = $descricao;
+			} else{
+				echo "Preencha a descrição!";
+			};
+
 		}
 
 		public function dadosImovel(){
@@ -38,10 +44,5 @@
 		}
 
 	}
-
-
-	$imovel1 = new Imovel(3,32125,"Rua 1", "Teste");
-
-	$imovel1 -> dadosImovel();
 
 ?>

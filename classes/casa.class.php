@@ -6,11 +6,11 @@
 
 		public $quintal;
 
-		public function __construct($quartos,$valor,$endereco,$quintal) {
+		public function __construct($quartos,$valor,$endereco,$quintal,$descricao) {
 			
-			parent::__construct($quartos,$valor,$endereco);
+			parent::__construct($quartos,$valor,$endereco, $descricao);
 			
-			if (is_bool($quintal)) {
+			if (is_string($quintal)) {
 				$this -> quintal = $quintal;
 			} /*else {
 				echo 'Algo deu errado!<br>';
@@ -33,8 +33,4 @@
 		}
 
 	}
-
-	$casa1 = new Casa(5,3000,5,true);
-
-	$casa1 -> dadosCasa();
 ?>
